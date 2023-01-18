@@ -16,13 +16,16 @@
 
 ### команды
 
-|команда|описание|
-|---|---|
-|git init|инициализация репозитория|
-|git config user.name|имя репозитория|
-|git config user.email|имейл репозитория|
-|git status|отображение состояния репозитория|
-```On branch master
+|команда|описание|пояснение|
+|---|---|---|
+|git init|инициализация репозитория||
+|git config user.name|имя репозитория||
+|git config user.email|имейл репозитория||
+|git status|отображение состояния репозитория|untracked(не отслеживается vcs)->staged(```git add```==добавление изменений в индекс)->commited(```git commit```==фиксация изменений [Как сделать новый коммит](./commmit_help.md))
+
+сообщение при добавлении изменений в индекс
+```
+On branch master
 
 No commits yet
 
@@ -31,5 +34,19 @@ Untracked files:
 
         README.md
 
-nothing added to commit but untracked files present (use "git add" to track) ```
-|git status|отображение состояния репозитория|
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+ответное сообщение:
+```
+[master (root-commit) dcf53ed] Добавлен README.md
+ 1 file changed, 35 insertions(+)
+ create mode 100644 README.md
+```
+
+
+
+
+
+
+
